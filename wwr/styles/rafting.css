@@ -36,7 +36,7 @@ h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
