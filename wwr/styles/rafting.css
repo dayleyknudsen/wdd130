@@ -1,41 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 :root {
-    --primary-color: #fb4700;
+    --primary-color: black;
     --secondary-color: #42CAFD;
-    --accent1-color: #28536b;
+    --accent1-color: Maroon;
     --accent2-color: #c2948a;
 
     --heading-font: 'Inconsolata', serif;
     --paragraph-font: 'Inconsolata', serif;
 
-    --nav-background-color:#42cafd;
-    --nav-link-color:#fb4700;
-    --nav-hover-link-color:#28536b;
-    --nav-hover-background-color:#c2948a;
+    --nav-background-color:Maroon;
+    --nav-link-color:#c2948a;
+    --nav-hover-link-color:black;
+    --nav-hover-background-color:black;
 }
 body {
     font-family: var(--paragraph-font);
     max-width: 100%;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     background-color:var(--secondary-color);
 } 
-
-
-h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
 header {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    background-color: var(--nav-background-color); 
     padding: 20px;
-    background-color: var(--accent1-color);
 }
-p {
-    padding: 10px;
+nav {
+    display: flex;
+    justify-content: center;   
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navigation li {
+    margin: 0 15px; 
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--secondary-color); 
+    font-weight: bold; 
 }
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     position: absolute;
+    background-color: var(--nav-background-color); 
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -43,23 +57,92 @@ h1 {
 .hero .heroimg {
     display: block;
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 840px;
 }
 article {
+    text-align: center;
     font-family: var(--heading-font);
-    color: black;
+    color: wheat;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: var(--nav-background-color); 
 }
 article img {
     float: right;
+    width: 150px;
 }
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+section2 {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+section2 img {
+    width: 15%;
+    height: auto;
+    margin: 10px;
+   }
 footer {
     text-align: center;
-    padding: 3px;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    padding: 20px;
 }
+footer p {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.links a {
+    margin: 0 10px;
+}
+.links img {
+    width: 30px;
+    height: auto;
+}
+/* color: var(--accent1-color);
+background-color: var(--secondary-color); */
+
+/* .navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+} */
+/* .logo {
+    max-width: 100%;
+    height: auto
+} */
+/* h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+} */
