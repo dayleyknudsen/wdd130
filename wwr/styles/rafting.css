@@ -176,12 +176,12 @@ legend {
     color: navy;
     font-size: 2em;
 }
-label, input, button, select, textarea {
+label, input, button, select, textarea, p {
     font-family: Inconsolata, serif;
     font-size: 1.5rem;
 }
 label {
-    text-align: left;
+    text-align: center;
     padding-right: 1rem;
 }
 input, select, textarea {

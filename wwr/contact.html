@@ -42,23 +42,24 @@
 
                         <label for="q2">2. What is your user's email?</label>
                         <input type="text" id="q2" name="q2">
-                            
-                        <label for="q3">3. Whats the purpose of your vist today?</label>
-                        <select id="q3" name="q3">
-                            <option value="choose one...">Choose one...</option>
-                            <option value="general inquiry">General Inquiry</option>
-                            <option value="reservation questions">Reservation Questions</option>
-                            <option value="website suggestion">Website Suggestions</option>
-                        </select>
+
+                        <p>3. Whats the purpose of your vist today?</p>
+                         <form>
+                            <label for="general inquiry">General Inquiry</label>
+                            <input type="radio" id="general inquiry" name="purpose" value="General Inquiry"> 
+                            <label for="website suggestions">Website Suggestion</label>
+                            <input type="radio" id="website suggestions" name="purpose" value=""> 
+                            <label for="reservation questions">Reservation Questions</label>
+                            <input type="radio" id="reservation questions" name="purpose" value="Reservation Questions"> 
+                         </form>   
                             
                         <label for="q4">4. the message</label>
                         <textarea id="q4" name="q4" rows="3" placeholder=""></textarea>
                                         
                         <label for="q5">Please subscribe me to the monthly newsletter</label>
                         <input type="checkbox" id="q5" name="q5">
-            
+                        <button type="submit">Submit Questionnaire</button>
                 </fieldset>
-            <button type="submit">Submit Questionnaire</button>
             </form>
         </main>
         <footer>
