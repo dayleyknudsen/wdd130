@@ -103,6 +103,19 @@ section2 img {
     height: auto;
     margin: 10px;
    }
+.company-information h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    position: absolute;
+    background-color: var(--nav-background-color); 
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.company-information h3 {
+    display: grid;
+    text-align: center;
+}
 footer {
     text-align: center;
     padding: 20px;
@@ -129,20 +142,52 @@ nav {
     width: 30px;
     height: auto;
 }
-/* color: var(--accent1-color);
-background-color: var(--secondary-color); */
-
-/* .navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-} */
-/* .logo {
-    max-width: 100%;
-    height: auto
-} */
-/* h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-} */
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 5px solid rgba(0, 0, 0, .1);
+    border-radius: 1.5rem;
+    background-color: #abb09d;
+    display: grid;
+    text-align: center;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 2em;
+}
+label, input, button, select, textarea {
+    font-family: Inconsolata, serif;
+    font-size: 1.5rem;
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: .5rem;
+}
+input [type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+}
+button {
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.75rem;
+}
+button:hover {
+    background-color: var(--accent1-color);
+}
