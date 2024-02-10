@@ -91,14 +91,14 @@ section p {
     line-height: 1.6;
     margin-top: 20px;
 }
-section2 {
+.section2 {
     padding: 20px;
     text-align: center;
     background-color: var(--secondary-color);
     margin-bottom: 20px;
     border-radius: 10px;
 }
-section2 img {
+.section2 img {
     width: 15%;
     height: auto;
     margin: 10px;
@@ -123,10 +123,13 @@ section2 img {
     text-align: center;
 }
 .employee img {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 15%;
+    height: auto;
+    margin: 10px;
 }
 footer {
     text-align: center;
