@@ -45,7 +45,7 @@ ul {
     color: var(--secondary-color); 
     font-weight: bold; 
 }
-h1 {
+.hero h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     position: absolute;
@@ -106,14 +106,26 @@ section2 img {
 .company-information h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    position: absolute;
     background-color: var(--nav-background-color); 
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.company-information h3 {
+    text-align: center;
     display: grid;
+}
+.company-information,
+.employee,
+ h3 {
+    display: grid;
+    text-align: center;
+}
+.company-information iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.employee img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 footer {
