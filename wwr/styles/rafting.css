@@ -117,17 +117,31 @@ section p {
     text-align: center;
 }
 .company-information iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: inline-flexbox;
+    justify-self: center;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid black;
 }
-.employee img {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 15%;
+.employee .a {
+    display: inline-flexbox;
+    justify-self: center;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+}
+.employee .b {
+    display: inline-flexbox;
+    justify-self: center;
+    width: 25%;
+    height: auto;
+    margin: 10px;
+}
+.employee .c {
+    display: inline-flexbox;
+    justify-self: center;
+    width: 25%;
     height: auto;
     margin: 10px;
 }
